@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  <div class="tab">
+    <button class="tablinks" id="defaultOpened" data-id="calc">Калькулятор дат</button>
+    <button class="tablinks" data-id="timer">Таймер</button>
+  </div>
+  <div id="calc" class="tabcontent">
+    <form id="datecalc">
+      <h3>Калькулятор дат</h3>
+      <label>
+        <strong>Первая дата:</strong>
+        <input type="date" name="firstDate" />
+      </label>
+      <label>
+        <strong>Вторая дата:</strong>
+        <input type="date" name="secondDate" />
+      </label>
+      <button type="submit">Расчитать промежуток</button>
+      <p id="datecalc__result"></p>
+    </form>
+  </div>
+
+  <div id="timer" class="tabcontent">
+    <h3>Таймер</h3>
+    <h2 id="counter">10</h2>
+    <button id="incTimer">+</button>
+    <button id="decTimer">-</button>
+    <button id="startTimer">start</button>
+    <button id="stopTimer">stop</button>
+
+  </div>
+
+
+
+
+</body>
+
+</html>
